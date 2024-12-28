@@ -1,6 +1,18 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning log</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
 <p>
-  <a href="{% url 'learning_logs:index' %}">Learning Log</a>
-  <a href="{% url 'learning_logs:topics' %}">Topics</a>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
 </p>
 
-{% block content %}{% endblock content %}
+{% block content %}{% endblock %}
+</body>
+</html>
