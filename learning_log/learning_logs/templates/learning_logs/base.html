@@ -19,5 +19,13 @@
 </p>
 
 {% block content %}{% endblock %}
+
+{% if user.is_authenticated %}
+    <hr />
+    <form action="{% url 'accounts:longout' %}" method="post">
+        {% csrf_token %}
+        <button name="submit">Long out</button>
+    </form>
+{% endif %}
 </body>
 </html>
