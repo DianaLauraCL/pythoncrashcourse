@@ -1,7 +1,7 @@
 # Data Visualization
 
-*Descripción del projecto*
-En este proyecto generamos graficos utilizando Matplotlib y Plotly, utilizaremos datos en formato CSV, GJSON, API para obtener información especifica de un sitio web, tambien usaremos el modulo random que nos genere y seleccione números randoms al azar. 
+*Descripción del proyecto*
+En este proyecto generamos graficos utilizando Matplotlib y Plotly, utilizaremos datos en formato CSV, GJSON, API para obtener información especifica de un sitio web, tambien usaremos el modulo random que nos genere y seleccione números al azar. 
 
 *Table of contents*
 
