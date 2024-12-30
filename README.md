@@ -4,6 +4,14 @@
 En este proyecto generamos graficos utilizando Matplotlib y Plotly, utilizaremos datos en formato CSV, GJSON, API para obtener información especifica de un sitio web, tambien usaremos el modulo random que nos genere y seleccione números al azar. 
 
 *Table of contents*
+- Plotting a simple line graph
+- Random Walk
+- Rolling Dice with plotly
+- The CSV file format
+- Mapping global datasets: GEOJSON format
+- Using an API
+- Visualizing Repositories Using Plotly
+- The Hacker News API
 
 
 *List techonologies and versions used*
