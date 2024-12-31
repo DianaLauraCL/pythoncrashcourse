@@ -23,7 +23,7 @@
 
 {% if user.is_authenticated %}
     <hr />
-    <form action="{% url 'accounts:longout' %}" method="post">
+    <form action="{% url 'accounts:logout' %}" method="post">
         {% csrf_token %}
         <button name="submit">Long out</button>
     </form>
