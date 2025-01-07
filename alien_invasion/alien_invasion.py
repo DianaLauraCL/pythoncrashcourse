@@ -1,6 +1,7 @@
 import sys
 import pygame
 
+from python_work.aliens import new_alien
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
@@ -84,9 +85,18 @@ class AlienInvasion:
 
     def _create_fleet(self):
         """Create the fleet of aliens."""
-        # Make an alien.
+        # Create an alien and keep adding aliens until there's no room left.
+        # Spacing between aliens is one alien width.
         alien = Alien(self)
-        self.aliens.add(alien)
+        alien_width = alien.rect.width
+
+        concurrent_x = alien_width
+        while concurrent_x < (self.settings.screen_width - 2 * alien_width):
+            new_alien = Alien(self)
+            new_alien.x = concurrent_x
+            new_alien.rect.x = concurrent_x
+            self.aliens.add(new_alien)
+            concurrent_x += 2 * alien_width
 
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
