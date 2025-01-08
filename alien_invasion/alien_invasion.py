@@ -77,6 +77,9 @@ class AlienInvasion:
             self.stats.reset_stats()
             self.game_active = True
 
+            # Hide the mouse cursor.
+            pygame.mouse.set_visible(False)
+
             # Get rid of any remaining bullets and aliens.
             self.bullets.empty()
             self.aliens.empty()
@@ -170,6 +173,7 @@ class AlienInvasion:
             sleep(0.5)
         else:
             self.game_active = False
+            pygame.mouse.set_visible(True)
 
     def _create_fleet(self):
         """Create the fleet of aliens."""
